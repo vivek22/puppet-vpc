@@ -40,6 +40,7 @@ class rjil::contrail::vrouter (
   class {'::contrail::vrouter':
     discovery_address => $discovery_address,
     api_address       => $api_address,
+    headless_mode     => true,
   }
 
   include rjil::contrail::logrotate::consolidate
